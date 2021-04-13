@@ -4,12 +4,12 @@ var listaCognomi = [
 ];
 
 
-// Costruisco una variabile cognomeMaiuscola che è uguale a mioUtente ma con la prima lettera maiuscola, e lo pusho in cognomi
+// Costruisco una variabile cognomeMaiuscola, ovvero ccognomeUtente ma con la prima lettera maiuscola, e lo pusho in cognomi
 inizialeMaiuscola = cognomeUtente.charAt(0);
 cognomeMaiuscola = inizialeMaiuscola.toUpperCase() + cognomeUtente.slice(1);
 listaCognomi.push(cognomeMaiuscola);
 
-
+//sistemo in ordine alfabetico
 listaCognomi.sort();
 
 document.getElementById("allCognomi").innerHTML = listaCognomi.join(', ');
